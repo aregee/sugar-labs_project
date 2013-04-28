@@ -1,4 +1,4 @@
-# Jinja Bootstrap example Django project
+#Sugarlabs project sharing website mockup
 
 This sample project uses Django 1.4
 
