@@ -1,0 +1,37 @@
+{% extends "bootstrap/layouts/base_navbar_responsive.html" %}
+
+
+{% block title %}MockUP sugarLabs{% endblock %}
+
+
+{% block navbar_wrapper %}
+<div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+        <div class="container">
+            {% block navbar_container %}
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                {% block navbar_links %}
+                    <a class="brand" href="#"><b style="color:orange">SUGAR</b> Labs</a>
+                    <div class="nav-collapse">
+                        <ul class="nav">
+			 
+			  
+                        </ul>
+ 
+			    <form class="navbar-form pull-right">
+			    <input type="text" class="span2" placeholder="Username">
+			    <input type="text" class="span2" placeholder="Password">
+			    <button type="submit" class="btn">LogIn</button>
+			  </form>
+                    </div>
+                    {% endblock %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+

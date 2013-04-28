@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% from "bootstrap/macros.html" import alert  %}
+{% from "bootstrap/forms/macros.html" import field, input  %}
+
+{% block css_extra %}
+    <style>
+      
+    </style>
+{% endblock %}
+
+{# Navbar is set in the app-specific override "base.html" #}
+
+{% block content %}
+
+
+<div class="container-fluid">
+<div class="hero-unit" style="background-color:black;color:orange">
+<div class="row-fluid">
+
+<div class="span5 pull-left">
+        <h1>Sugar<i style="color:gray">Labs</i></h1>
+        <br>
+	 <p>
+        The award-winning Sugar Learning Platform promotes collaborative learning through Sugar Activities that encourage critical thinking, the heart of a quality education. Designed from the ground up especially for children, Sugar offers an alternative to traditional “office-desktop” software.
+	</p>
+</div>
+<div class="span6 pull-right">
+<form class="form-horizontal">
+
+<div class="control-group">
+  
+    <div class="controls">
+      <input type="text" placeholder="Pick  a Username">
+    </div>
+  </div>
+
+<div class="control-group">
+  
+    <div class="controls">
+      <input type="text" id="inputEmail" placeholder="Email">
+    </div>
+  </div>
+  <div class="control-group">
+  
+    <div class="controls">
+      <input type="password" id="inputPassword" placeholder="Password">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+   <a><button type="submit" class="btn btn-large btn-primary" href="/profile">Sign UP!</button></a>
+    </div>
+  </div>
+
+</form>
+
+</div>
+	 
+</div>
+ </div>
+
+ 		 
+{% endblock %}
